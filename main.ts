@@ -66,3 +66,11 @@ const ColorBlue = 2;
 enum Color { Red = 33, Green = 1, Blue = 2};
 let backgroundColor = Color.Red;
 console.log("backgroundColor:"+backgroundColor); // 33
+// =======================================================================================================================================
+//video number 017 Type Assertions
+
+let myMessage ;
+myMessage = 'abc';
+let endsWithC = (<String>myMessage).endsWith('c');
+let alternativeWay = (myMessage as String).endsWith('c');
+console.log("endsWithC:"+endsWithC+" alternativeWay:"+alternativeWay);

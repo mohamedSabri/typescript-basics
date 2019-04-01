@@ -60,4 +60,10 @@ var Color;
 })(Color || (Color = {}));
 ;
 var backgroundColor = Color.Red;
-console.log("backgroundColor:" + backgroundColor);
+console.log("backgroundColor:" + backgroundColor); // 33
+// 017 Type Assertions
+var myMessage;
+myMessage = 'abc';
+var endsWithC = myMessage.endsWith('c');
+var alternativeWay = myMessage.endsWith('c');
+console.log("endsWithC:" + endsWithC + " alternativeWay:" + alternativeWay);
