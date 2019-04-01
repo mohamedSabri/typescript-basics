@@ -1,3 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * in typescript we divide our programs into multiple files in each file we export one or more type
+ * these types can be classes,fuctions, simple variables or objects and where we need to use these types
+ * we need to import them first. When we have import or export statement on top of a file this file is a module
+ * of typescript point of view.
+ *
+ * to use point you need to import it (Point is a type -class- that has export keyword before it)
+ *
+ * import {name o the types we want to import seperated by comma} from 'relative path to that module from this file'
+ * import {Point} from './Classes' ;  ==> ./ refers to the current folder and don't write classes.ts
+ */
 var Point = /** @class */ (function () {
     /**
      *  members or fields the default value is undefined
@@ -69,6 +82,7 @@ var Point = /** @class */ (function () {
     });
     return Point;
 }());
+exports.Point = Point;
 var point = new Point();
 // point._x = 1;
 // point._y = 2;

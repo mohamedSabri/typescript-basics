@@ -1,4 +1,15 @@
-class Point {
+/**
+ * in typescript we divide our programs into multiple files in each file we export one or more type
+ * these types can be classes,fuctions, simple variables or objects and where we need to use these types 
+ * we need to import them first. When we have import or export statement on top of a file this file is a module
+ * of typescript point of view.
+ * 
+ * to use point you need to import it (Point is a type -class- that has export keyword before it)
+ * 
+ * import {name o the types we want to import seperated by comma} from 'relative path to that module from this file'
+ * import {Point} from './Classes' ;  ==> ./ refers to the current folder and don't write classes.ts
+ */
+export class Point {
     /**
      *  members or fields the default value is undefined 
      * use access modifiers to control access to certain members of a class to the outside.
