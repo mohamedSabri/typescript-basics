@@ -74,3 +74,28 @@ myMessage = 'abc';
 let endsWithC = (<String>myMessage).endsWith('c');
 let alternativeWay = (myMessage as String).endsWith('c');
 console.log("endsWithC:"+endsWithC+" alternativeWay:"+alternativeWay);
+
+// =======================================================================================================================================
+//video number 018 Arrow Functions
+
+let log1 = function(message){
+    console.log(message);
+}
+
+let log2 = (message) => {
+    console.log(message);
+}
+
+// if your function has only one line you can remove the brackets as well as with the parameters,but it isn't a readable code
+
+let log3 = message => console.log(message);
+
+// you can has no parameters also 
+let log4 = () => {
+    console.log("Arrow Function With No Parameters");
+}
+
+log1('logging 1 ') 
+log2('Logging 2') 
+log3('Logging 3') 
+log4()

@@ -61,9 +61,28 @@ var Color;
 ;
 var backgroundColor = Color.Red;
 console.log("backgroundColor:" + backgroundColor); // 33
-// 017 Type Assertions
+// =======================================================================================================================================
+//video number 017 Type Assertions
 var myMessage;
 myMessage = 'abc';
 var endsWithC = myMessage.endsWith('c');
 var alternativeWay = myMessage.endsWith('c');
 console.log("endsWithC:" + endsWithC + " alternativeWay:" + alternativeWay);
+// =======================================================================================================================================
+//video number 018 Arrow Functions
+var log1 = function (message) {
+    console.log(message);
+};
+var log2 = function (message) {
+    console.log(message);
+};
+// if your function has only one line you can remove the brackets as well as with the parameters,but it isn't a readable code
+var log3 = function (message) { return console.log(message); };
+// you can has no parameters also 
+var log4 = function () {
+    console.log("Arrow Function With No Parameters");
+};
+log1('logging 1 ');
+log2('Logging 2');
+log3('Logging 3');
+log4();
