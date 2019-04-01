@@ -17,8 +17,8 @@ var Point = /** @class */ (function () {
     return Point;
 }());
 var point = new Point();
-point.x = 1;
-point.y = 2;
+// point.x = 1;
+// point.y = 2;
 var point1 = new Point(111, 222);
 point.draw();
 point1.draw();

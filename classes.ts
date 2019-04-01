@@ -1,7 +1,10 @@
 class Point {
     // members or fields the default value is undefined
-    x: number;
-    y: number;
+    // use access modifiers to control access to certain members of a class to the outside.
+    // you can apply these access modifiers to fields, propeties and methods
+    // the default access modifier is public
+    private x: number;
+    private y: number;
 
     // there is no multiple constructor in typescript ,So if you want to declare a point() with no arguments (like calling the default constructor)
     // you need to make the parameter you don't need to pass optional and we do this by put a ? after its name 
@@ -22,8 +25,8 @@ class Point {
 }
 
 let point = new Point();
-point.x = 1;
-point.y = 2;
+// point.x = 1;
+// point.y = 2;
 let point1 = new Point(111, 222);
 point.draw();
 point1.draw();
